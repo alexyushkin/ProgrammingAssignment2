@@ -23,8 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
-  m_inv<-x$get_inv()
-  if(!is.null(m_inv)){
+  m_inv <- x$get_inv()
+  if(!is.null(m_inv)) {
     message("Getting cache data")
     return(m_inv)
   }
